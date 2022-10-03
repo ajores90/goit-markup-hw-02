@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--color-text);
-  background: var(--color-background-second);
+  background: var(--color-white);
 }
 
 .header {
@@ -26,6 +26,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .logo-web {
@@ -45,6 +46,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
 .nav li {
@@ -67,6 +69,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  letter-spacing: 0.02em;
 }
 li {
   list-style-type: none;
@@ -74,6 +77,14 @@ li {
 
 .nav-link.tel {
   color: var(--color-text);
+}
+
+.nav-link.current {
+  color: var(--color-accent);
+}
+
+.nav-link.current:hover {
+  color: var(--color-title);
 }
 
 .nav-link.tel:hover,
@@ -90,6 +101,9 @@ li {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button-hero {
@@ -98,6 +112,9 @@ li {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-family: 'Roboto';
   cursor: pointer;
   color: var(--color-white);
@@ -106,10 +123,6 @@ li {
 .button-hero:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.section {
-  background: var(--color-background-second);
 }
 
 .section-title {
@@ -129,16 +142,13 @@ li {
   letter-spacing: 0.03em;
 }
 
-.caption {
-  background: var(--color-background-second);
-}
-
 .caption-title {
   color: var(--color-title);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team {
@@ -151,6 +161,7 @@ li {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-text {
@@ -159,6 +170,7 @@ li {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-box-img {
